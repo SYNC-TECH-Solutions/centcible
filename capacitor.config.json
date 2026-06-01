@@ -1,0 +1,6 @@
+{
+  "appId": "com.centcible.app",
+  "appName": "Centcible",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
