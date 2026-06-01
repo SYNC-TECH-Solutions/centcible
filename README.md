@@ -2,6 +2,14 @@
 
 > **Track Expenses. Scan Receipts. Command Your Wealth.**
 
+---
+
+## 📲 Download Centcible Mobile Apps
+* 🤖 **[Download Android APK (Direct Download)](https://github.com/SYNC-TECH-Solutions/centcible/releases/latest/download/app-debug.apk)** — Install instantly on any Android device!
+* 🍎 **[Download iOS & Web Releases](https://github.com/SYNC-TECH-Solutions/centcible/releases/latest)** — Check the latest updates and compile native builds.
+
+---
+
 Centcible is a premium, AI-powered financial management app for Web, Android, and iOS. Built with React + Vite and powered by **Google Gemini AI** for intelligent receipt parsing and personalised savings advice.
 
 ---
