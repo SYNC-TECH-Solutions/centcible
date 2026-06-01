@@ -1,11 +1,8 @@
-# Centcible — Luxury AI-Powered Expense Tracker
+# Centcible — Luxury Smart Expense Tracker
 
-![Centcible](https://img.shields.io/badge/Centcible-v0.1.0-A9927D?style=for-the-badge)
-![React](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react)
-![Capacitor](https://img.shields.io/badge/Capacitor-Android%20%7C%20iOS-119EFF?style=for-the-badge&logo=capacitor)
-![Vite](https://img.shields.io/badge/Vite-8-646cff?style=for-the-badge&logo=vite)
+> **Track Expenses. Scan Receipts. Command Your Wealth.**
 
-> **Track expenses. Scan receipts with Gemini AI. Sync with your partner. Command your wealth.**
+Centcible is a premium, AI-powered financial management app for Web, Android, and iOS. Built with React + Vite and powered by **Google Gemini AI** for intelligent receipt parsing and personalised savings advice.
 
 ---
 
@@ -13,75 +10,83 @@
 
 | Feature | Description |
 |---|---|
-| 🤖 **Gemini AI Receipt Scanner** | Upload any receipt — AI extracts items, amounts, categories, and flags impulse spends |
-| 👫 **Partner Hub** | Share budgets, grocery lists, and chat in real-time with your partner |
-| 🎯 **Budget Goals** | Set monthly category limits with visual progress bars and over-budget alerts |
-| 💳 **Loans Tracker** | Track personal debts with payment progress and payoff history |
-| 📄 **Monthly Statements** | Generate premium PDF reports with data-driven savings tips |
-| 🌍 **Multi-Currency** | USD, EUR, GBP, JPY, CAD, AUD, INR — all supported |
-| 📱 **Android & iOS** | Native apps via Capacitor — camera scanning, push notifications |
-| 🌐 **Web App** | Fully responsive, mobile-first design |
+| 📊 **Dashboard** | Real-time spending overview with interactive charts |
+| 🧾 **AI Receipt Scanning** | Upload receipts — Gemini AI itemises and categorises instantly |
+| 🎯 **Budget Goals** | Set monthly category limits with live progress tracking |
+| 💳 **Loans Tracker** | Track debts, pay-downs, and loan completion |
+| 👥 **Partner Hub** | Shared grocery lists, real-time partner chat, and joint ledger |
+| 📄 **Monthly Statements** | Premium PDF statements with AI-generated savings tips |
+| 💱 **Multi-Currency** | USD, EUR, GBP, JPY, INR, CAD, AUD support |
+| 📱 **Android & iOS** | Native mobile apps via Capacitor |
 
 ---
 
-## 🚀 Getting Started
-
-### Web (Development)
+## 🚀 Quick Start (Web)
 
 ```bash
 npm install
 npm run dev
 ```
-
 Open [http://localhost:5173](http://localhost:5173)
-
-### Android
-
-1. `npm run build` — build the web app
-2. `npx cap sync android` — sync to Android project
-3. Open `android/` in **Android Studio**
-4. Click **Run** on your device or emulator
-
-### iOS
-
-1. `npm run build`
-2. `npx cap sync ios`
-3. Open `ios/App/App.xcodeproj` in **Xcode** (macOS required)
-4. Click **Run** on a simulator or device
 
 ---
 
-## ⚙️ Gemini AI Setup
+## 📱 Mobile (Android)
+
+1. Install [Android Studio](https://developer.android.com/studio)
+2. Build the web app: `npm run build`
+3. Sync Capacitor: `npx cap sync`
+4. Open Android Studio: `npx cap open android`
+5. Run on emulator or physical device
+
+## 📱 Mobile (iOS)
+
+> Requires macOS with Xcode installed.
+
+1. Build the web app: `npm run build`
+2. Sync Capacitor: `npx cap sync`
+3. Open Xcode: `npx cap open ios`
+4. Run on simulator or physical device
+
+---
+
+## 🤖 Gemini AI Setup
+
+To enable AI-powered receipt scanning:
 
 1. Get a free API key from [Google AI Studio](https://aistudio.google.com/)
-2. Open the app → **Scan Receipt** → ⚙️ **AI Configuration**
-3. Paste your key — it's stored securely in your browser's local storage
+2. Open the app → **Scan Receipt** → click **AI Configuration**
+3. Paste your key and click **Save Key**
 
 ---
 
 ## 📦 Tech Stack
 
-- **Frontend:** React 19 + Vite 8
-- **Routing:** React Router v7
-- **Charts:** Recharts
-- **Icons:** Lucide React
-- **OCR Fallback:** Tesseract.js
-- **Mobile:** Capacitor (Android + iOS)
-- **Auth/DB:** Firebase (mock for dev, real for production)
-- **CI/CD:** GitHub Actions → automatic Android APK on every push
+- **Frontend**: React 19, Vite 8, React Router 7
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **OCR Fallback**: Tesseract.js
+- **Mobile**: Capacitor (Android + iOS)
+- **AI**: Google Gemini 2.5 Flash
+- **Auth & DB**: Firebase (mock layer for local dev)
 
 ---
 
-## 📱 Download
+## 🔄 CI/CD
 
-Latest Android APK and web builds are available on the [**Releases page**](https://github.com/SYNC-TECH-Solutions/centcible/releases).
+GitHub Actions automatically:
+- Builds the web app on every push to `main`
+- Compiles an Android Debug APK
+- Creates a GitHub Release with downloadable artifacts
+
+See [`.github/workflows/build.yml`](.github/workflows/build.yml)
 
 ---
 
-## 👨‍💻 Author
+## 👤 Author
 
-**Sheraz Hussain** — [@SherazHussain546](https://github.com/SherazHussain546)  
-SYNC TECH Solutions
+**Sheraz Hussain** — [@SherazHussain546](https://github.com/SherazHussain546)
+SYNC Tech Solutions
 
 ---
 
