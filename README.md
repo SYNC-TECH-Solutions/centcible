@@ -5,7 +5,7 @@
 ---
 
 ## 📲 Download Centcible Mobile Apps
-* 🤖 **[Download Android APK (Direct Download)](https://github.com/SYNC-TECH-Solutions/centcible/releases/latest/download/app-debug.apk)** — Install instantly on any Android device!
+* 🤖 **[Download Android APK (Direct Download)](https://github.com/SYNC-TECH-Solutions/centcible/raw/main/app-debug.apk)** — Install instantly on any Android device!
 * 🍎 **[Download iOS & Web Releases](https://github.com/SYNC-TECH-Solutions/centcible/releases/latest)** — Check the latest updates and compile native builds.
 
 ---

@@ -7,7 +7,7 @@ import {
   TrendingUp, CreditCard, MessageCircle, Bell, Download
 } from 'lucide-react';
 
-const APK_URL = 'https://github.com/SYNC-TECH-Solutions/centcible/releases/latest/download/app-debug.apk';
+const APK_URL = '/app-debug.apk';
 const GITHUB_RELEASES = 'https://github.com/SYNC-TECH-Solutions/centcible/releases/latest';
 
 const FEATURES = [
