@@ -193,9 +193,20 @@ export const BudgetProvider = ({ children }) => {
 
   const sendChatMessage = async (text) => {
     if (!activeAccount) return;
-    const newDoc = { text, accountId: activeAccount.id, sender: userProfile.username, date: new Date().toISOString() };
+    const newDoc = { text, accountId: activeAccount.id, sender: userProfile.username, date: new Date().toISOString(), reactions: {} };
     const docRef = await addDoc(collection(db, 'messages'), newDoc);
     setChatMessages(prev => [...prev, { id: docRef.id, ...newDoc }]);
+  };
+
+  const reactToMessage = (messageId, emoji, username) => {
+    setChatMessages(prev => prev.map(msg => {
+      if (msg.id !== messageId) return msg;
+      const reactions = { ...(msg.reactions || {}) };
+      // Toggle: if user already reacted with this emoji, remove it
+      const currentCount = reactions[emoji] || 0;
+      reactions[emoji] = currentCount > 0 ? currentCount - 1 : currentCount + 1;
+      return { ...msg, reactions };
+    }));
   };
 
   const allCategories = [...defaultCategories, ...customCategories.map(c => c.name)];
@@ -222,7 +233,8 @@ export const BudgetProvider = ({ children }) => {
     addGroceryItem,
     toggleGroceryItem,
     deleteGroceryItem,
-    sendChatMessage
+    sendChatMessage,
+    reactToMessage
   };
 
   return (
