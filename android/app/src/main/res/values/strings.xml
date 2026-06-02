@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Centcible</string>
-    <string name="title_activity_main">Centcible</string>
-    <string name="package_name">com.centcible.app</string>
-    <string name="custom_url_scheme">com.centcible.app</string>
+    <string name="app_name">Vaultr</string>
+    <string name="title_activity_main">Vaultr</string>
+    <string name="package_name">com.vaultr.app</string>
+    <string name="custom_url_scheme">com.vaultr.app</string>
 </resources>

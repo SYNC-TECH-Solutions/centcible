@@ -33,18 +33,18 @@ export const AuthProvider = ({ children }) => {
   
   const signup = async (email, password, profileData) => {
     const { user } = await createUserWithEmailAndPassword(auth, email, password);
-    // Create user profile
     const profile = {
       uid: user.uid,
       email,
+      avatarUrl: '',
       ...profileData,
       createdAt: new Date().toISOString()
     };
     await setDoc(doc(db, 'users', user.uid), profile);
-    
+
     // Create default account for this user
-    const accountRef = await addDoc(collection(db, 'accounts'), {
-      name: 'Personal Wallet',
+    await addDoc(collection(db, 'accounts'), {
+      name: 'Personal Vault',
       ownerId: user.uid,
       sharedWith: [],
       createdAt: new Date().toISOString()

@@ -44,9 +44,14 @@ export default function MobileTopBar() {
             background: 'linear-gradient(135deg, var(--primary-color), var(--accent-burgundy))',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             fontWeight: 700, fontSize: '0.85rem', color: 'white',
+            overflow: 'hidden', border: '2px solid var(--surface-border)',
+            padding: 0,
           }}
         >
-          {userProfile?.username?.[0]?.toUpperCase() || <User size={14} />}
+          {userProfile?.avatarUrl
+            ? <img src={userProfile.avatarUrl} alt="avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            : userProfile?.username?.[0]?.toUpperCase() || <User size={14} />
+          }
         </button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-package com.centcible.app;
+package com.vaultr.app;
 
 import com.getcapacitor.BridgeActivity;
 

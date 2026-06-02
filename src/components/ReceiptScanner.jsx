@@ -74,7 +74,7 @@ export default function ReceiptScanner() {
               {
                 parts: [
                   {
-                    text: `You are an expert receipt parsing AI for the "Centcible" expense tracker app. Analyze this receipt image. 
+                    text: `You are an expert receipt parsing AI for the "Vaultr" expense tracker app. Analyze this receipt image. 
 Extract the list of items purchased and their corresponding prices. 
 Determine if any item is a non-essential, impulsive, or "useless" spend (such as sugary snacks, junk food, alcohol, tobacco, video games, toys, coffee shop purchases, dining out on a whim). Mark those with isUseless: true, others as false.
 Map each item to one of these categories: Groceries, Dining, Transportation, Entertainment, Utilities, Other, Useless.
