@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import { useNotifications } from '../context/NotificationContext';
 
 function Sidebar() {
-  const { logout } = useAuth();
+  const { logout, userProfile } = useAuth();
   const { unreadCount, setShowBell } = useNotifications();
   const location = useLocation();
 
@@ -62,6 +62,45 @@ function Sidebar() {
             </span>
           )}
         </button>
+
+        {/* User Presence Summary */}
+        {userProfile && (
+          <div 
+            style={{ 
+              margin: '0 8px 8px 8px',
+              padding: '10px 12px', 
+              borderRadius: '12px', 
+              background: 'rgba(255,255,255,0.03)', 
+              border: '1px solid rgba(255,255,255,0.05)',
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '10px',
+            }}
+          >
+            <div style={{
+              width: '28px', height: '28px', borderRadius: '50%',
+              background: userProfile?.avatarUrl ? 'transparent' : 'linear-gradient(135deg, var(--primary-color), var(--accent-burgundy))',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: '0.75rem', fontWeight: 700, color: 'white',
+              overflow: 'hidden', flexShrink: 0,
+              border: '1px solid rgba(255,255,255,0.1)'
+            }}>
+              {userProfile?.avatarUrl ? (
+                <img src={userProfile.avatarUrl} alt="Avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              ) : (
+                `${userProfile?.firstName?.[0] || ''}${userProfile?.lastName?.[0] || ''}`.toUpperCase() || '?'
+              )}
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0, textAlign: 'left', flex: 1 }}>
+              <span style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-main)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', lineHeight: 1.2 }}>
+                {userProfile?.firstName} {userProfile?.lastName}
+              </span>
+              <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', lineHeight: 1 }}>
+                @{userProfile?.username}
+              </span>
+            </div>
+          </div>
+        )}
 
         <button
           className="nav-link"
