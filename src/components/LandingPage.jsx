@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import {
@@ -8,7 +8,8 @@ import {
 } from 'lucide-react';
 
 const APK_URL = '/app-debug.apk';
-const GITHUB_RELEASES = 'https://github.com/SYNC-TECH-Solutions/centcible/releases/latest';
+const GITHUB_RELEASES = 'https://github.com/SYNC-TECH-Solutions/Vaultr/releases/latest';
+const APP_NAME = 'Vaultr';
 
 const FEATURES = [
   {
@@ -26,7 +27,7 @@ const FEATURES = [
   {
     icon: Target,
     title: 'Budget Goals',
-    desc: 'Set monthly spending caps by category with live progress tracking. Receive alerts before you overspend — never be caught off-guard again.',
+    desc: 'Set monthly spending caps by category with live progress tracking. Receive alerts before you overspend â€” never be caught off-guard again.',
     color: '#A9927D'
   },
   {
@@ -44,7 +45,7 @@ const FEATURES = [
   {
     icon: TrendingUp,
     title: 'Wealth Intelligence Dashboard',
-    desc: 'A birds-eye view of your entire financial life — spending breakdowns, category trends, income vs. expenses, all in stunning interactive charts.',
+    desc: 'A birds-eye view of your entire financial life â€” spending breakdowns, category trends, income vs. expenses, all in stunning interactive charts.',
     color: '#8b6f5e'
   }
 ];
@@ -58,7 +59,7 @@ const STEPS = [
 
 const TESTIMONIALS = [
   {
-    quote: 'Centcible completely changed how my partner and I manage money. The real-time chat and grocery tagging is exactly what we needed.',
+    quote: 'Vaultr completely changed how my partner and I manage money. The real-time chat and grocery tagging is exactly what we needed.',
     name: 'Priya M.',
     role: 'Marketing Manager, London'
   },
@@ -76,24 +77,24 @@ const TESTIMONIALS = [
 
 const FAQS = [
   {
-    q: 'Is Centcible free to use?',
-    a: 'Yes — Centcible is completely free to download and use. No hidden fees, no subscriptions. We believe everyone deserves premium financial tools.'
+    q: 'Is Vaultr free to use?',
+    a: 'Yes â€” Vaultr is completely free to download and use. No hidden fees, no subscriptions. We believe everyone deserves premium financial tools.'
   },
   {
     q: 'How does the AI receipt scanning work?',
     a: 'We use Google\'s Gemini 2.5 Flash model. You upload a photo of your receipt, and Gemini identifies every line item, maps it to a spending category, flags impulse purchases, and suggests where you could save next time.'
   },
   {
-    q: 'Can I use Centcible with my partner?',
-    a: 'Absolutely. Enter your partner\'s Centcible username in the Partner Hub and you\'ll instantly share a synchronized ledger, grocery list, and real-time chat. Changes appear instantly on both devices.'
+    q: 'Can I use Vaultr with my partner?',
+    a: 'Absolutely. Enter your partner\'s Vaultr username in the Partner Hub and you\'ll instantly share a synchronized ledger, grocery list, and real-time chat. Changes appear instantly on both devices.'
   },
   {
     q: 'Is my financial data safe?',
-    a: 'Your data is protected with bank-grade authentication and encryption. We never sell your data to third parties — your financial life stays private.'
+    a: 'Your data is protected with bank-grade authentication and encryption. We never sell your data to third parties â€” your financial life stays private.'
   },
   {
-    q: 'Does Centcible work on iPhone?',
-    a: 'The web app works on all devices including iPhone via any browser. A native iOS app is coming soon — follow our GitHub for release updates.'
+    q: 'Does Vaultr work on iPhone?',
+    a: 'The web app works on all devices including iPhone via any browser. A native iOS app is coming soon â€” follow our GitHub for release updates.'
   }
 ];
 
@@ -141,7 +142,7 @@ export default function LandingPage() {
   return (
     <div style={{ background: 'var(--bg-color)', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
-      {/* ── STICKY NAV ── */}
+      {/* â”€â”€ STICKY NAV â”€â”€ */}
       <header style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '20px 6%', borderBottom: '1px solid var(--surface-border)',
@@ -171,7 +172,7 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* ── HERO ── */}
+      {/* â”€â”€ HERO â”€â”€ */}
       <section style={{
         display: 'flex', flexDirection: 'column', alignItems: 'center',
         justifyContent: 'center', textAlign: 'center',
@@ -200,7 +201,7 @@ export default function LandingPage() {
           color: 'var(--text-muted)', fontSize: 'clamp(1rem, 2vw, 1.25rem)',
           maxWidth: '620px', lineHeight: '1.7', marginBottom: '44px', fontWeight: '300'
         }}>
-          Centcible combines AI-powered receipt scanning, real-time partner collaboration, and premium monthly statements — free, forever, on every device.
+          Vaultr combines AI-powered receipt scanning, real-time partner collaboration, and premium monthly statements â€” free, forever, on every device.
         </p>
 
         <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '28px' }}>
@@ -224,7 +225,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── FEATURES ── */}
+      {/* â”€â”€ FEATURES â”€â”€ */}
       <section id="features" style={{ padding: 'clamp(60px, 8vw, 100px) 6%', background: 'rgba(5, 2, 7, 0.6)' }}>
         <div style={{ textAlign: 'center', marginBottom: '64px' }}>
           <p style={{ color: 'var(--primary-color)', fontSize: '0.8rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px' }}>Everything You Need</p>
@@ -232,7 +233,7 @@ export default function LandingPage() {
             Built for the Way Modern Couples & Individuals Actually Live
           </h2>
           <p style={{ color: 'var(--text-muted)', maxWidth: '560px', margin: '0 auto', lineHeight: '1.6' }}>
-            Every feature in Centcible solves a real financial problem — from scanning that grocery receipt to syncing with your partner on the other side of the world.
+            Every feature in Vaultr solves a real financial problem â€” from scanning that grocery receipt to syncing with your partner on the other side of the world.
           </p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))', gap: '24px' }}>
@@ -249,11 +250,11 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ── */}
+      {/* â”€â”€ HOW IT WORKS â”€â”€ */}
       <section id="how" style={{ padding: 'clamp(60px, 8vw, 100px) 6%' }}>
         <div style={{ textAlign: 'center', marginBottom: '64px' }}>
           <p style={{ color: 'var(--primary-color)', fontSize: '0.8rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px' }}>Simple Setup</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>How Centcible Works</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>How Vaultr Works</h2>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '32px', maxWidth: '1000px', margin: '0 auto' }}>
           {STEPS.map(({ num, title, desc }) => (
@@ -267,7 +268,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
+      {/* â”€â”€ TESTIMONIALS â”€â”€ */}
       <section style={{ padding: 'clamp(60px, 8vw, 100px) 6%', background: 'rgba(5, 2, 7, 0.6)' }}>
         <div style={{ textAlign: 'center', marginBottom: '56px' }}>
           <p style={{ color: 'var(--primary-color)', fontSize: '0.8rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px' }}>Trusted Worldwide</p>
@@ -289,7 +290,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── DOWNLOAD ── */}
+      {/* â”€â”€ DOWNLOAD â”€â”€ */}
       <section id="download" style={{
         padding: 'clamp(80px, 10vw, 120px) 6%', textAlign: 'center',
         background: 'linear-gradient(135deg, rgba(73,17,28,0.25) 0%, rgba(10,3,9,0.5) 100%)',
@@ -299,10 +300,10 @@ export default function LandingPage() {
           Available Now
         </p>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', marginBottom: '20px', maxWidth: '700px', margin: '0 auto 20px' }}>
-          Take Centcible Everywhere You Go
+          Take Vaultr Everywhere You Go
         </h2>
         <p style={{ color: 'var(--text-muted)', maxWidth: '560px', margin: '0 auto 52px', lineHeight: '1.6' }}>
-          Download the native Android app for the full experience — camera receipt scanning, offline mode, and push notification budgeting alerts.
+          Download the native Android app for the full experience â€” camera receipt scanning, offline mode, and push notification budgeting alerts.
         </p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', marginBottom: '32px' }}>
           {/* Android APK Direct Download */}
@@ -347,11 +348,11 @@ export default function LandingPage() {
           onMouseEnter={e => { e.currentTarget.style.color = 'var(--primary-color)'; e.currentTarget.style.borderBottomColor = 'var(--primary-color)'; }}
           onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.borderBottomColor = 'transparent'; }}
         >
-          View all releases & source code on GitHub →
+          View all releases & source code on GitHub â†’
         </a>
       </section>
 
-      {/* ── FAQ ── */}
+      {/* â”€â”€ FAQ â”€â”€ */}
       <section id="faq" style={{ padding: 'clamp(60px, 8vw, 100px) 6%', maxWidth: '820px', margin: '0 auto', width: '100%' }}>
         <div style={{ textAlign: 'center', marginBottom: '52px' }}>
           <p style={{ color: 'var(--primary-color)', fontSize: '0.8rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '14px' }}>Got Questions?</p>
@@ -362,17 +363,17 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── FINAL CTA ── */}
+      {/* â”€â”€ FINAL CTA â”€â”€ */}
       <section style={{ padding: 'clamp(80px, 10vw, 120px) 6%', textAlign: 'center', background: 'rgba(5, 2, 7, 0.6)', borderTop: '1px solid var(--surface-border)' }}>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', marginBottom: '20px' }}>
           Ready to Command Your Wealth?
         </h2>
         <p style={{ color: 'var(--text-muted)', maxWidth: '500px', margin: '0 auto 44px', lineHeight: '1.6' }}>
-          Join thousands of users already taking control of their finances with Centcible's AI-powered platform.
+          Join thousands of users already taking control of their finances with Vaultr's AI-powered platform.
         </p>
         <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <button className="btn-primary" style={{ padding: '16px 40px', fontSize: '1.05rem' }} onClick={handleLaunchApp}>
-            {currentUser ? 'Go to Dashboard' : 'Get Started — It\'s Free'} <ArrowRight size={18} />
+            {currentUser ? 'Go to Dashboard' : 'Get Started â€” It\'s Free'} <ArrowRight size={18} />
           </button>
           <a href={APK_URL} target="_blank" rel="noreferrer" className="btn-secondary"
             style={{ padding: '16px 28px', fontSize: '1.05rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
@@ -381,7 +382,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
+      {/* â”€â”€ FOOTER â”€â”€ */}
       <footer style={{ padding: '48px 6% 32px', borderTop: '1px solid var(--surface-border)', background: '#050207' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '40px', marginBottom: '48px' }}>
           <div style={{ maxWidth: '300px' }}>
@@ -404,7 +405,7 @@ export default function LandingPage() {
             </div>
             <div>
               <div style={{ fontWeight: 700, marginBottom: '16px', fontSize: '0.85rem', color: 'var(--primary-color)', letterSpacing: '1px', textTransform: 'uppercase' }}>Downloads</div>
-              {[['Android APK', APK_URL], ['GitHub Releases', GITHUB_RELEASES], ['Source Code', 'https://github.com/SYNC-TECH-Solutions/centcible']].map(([label, href]) => (
+              {[['Android APK', APK_URL], ['GitHub Releases', GITHUB_RELEASES], ['Source Code', 'https://github.com/SYNC-TECH-Solutions/Vaultr']].map(([label, href]) => (
                 <div key={label} style={{ marginBottom: '10px' }}>
                   <a href={href} target="_blank" rel="noreferrer" style={{ color: 'var(--text-muted)', fontSize: '0.9rem', textDecoration: 'none', transition: 'color 0.2s' }}
                     onMouseEnter={e => e.target.style.color = 'var(--text-main)'}
@@ -416,10 +417,11 @@ export default function LandingPage() {
           </div>
         </div>
         <div style={{ borderTop: '1px solid var(--surface-border)', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', color: 'var(--text-muted)', fontSize: '0.78rem' }}>
-          <span>© 2026 Centcible Inc. All rights reserved.</span>
-          <span>Built with ❤️ by <a href="https://github.com/SherazHussain546" target="_blank" rel="noreferrer" style={{ color: 'var(--primary-color)' }}>SherazHussain546</a> · Powered by Google Gemini AI</span>
+          <span>Â© 2026 Vaultr Inc. All rights reserved.</span>
+          <span>Built with â¤ï¸ by <a href="https://github.com/SherazHussain546" target="_blank" rel="noreferrer" style={{ color: 'var(--primary-color)' }}>SherazHussain546</a> Â· Powered by Google Gemini AI</span>
         </div>
       </footer>
     </div>
   );
 }
+

@@ -1,35 +1,35 @@
-# Centcible — Luxury Smart Expense Tracker
+﻿# Vaultr â€” Luxury Smart Expense Tracker
 
 > **Track Expenses. Scan Receipts. Command Your Wealth.**
 
 ---
 
-## 📲 Download Centcible Mobile Apps
-* 🤖 **[Download Android APK (Direct Download)](https://github.com/SYNC-TECH-Solutions/centcible/raw/main/app-debug.apk)** — Install instantly on any Android device!
-* 🍎 **[Download iOS & Web Releases](https://github.com/SYNC-TECH-Solutions/centcible/releases/latest)** — Check the latest updates and compile native builds.
+## ðŸ“² Download Vaultr Mobile Apps
+* ðŸ¤– **[Download Android APK (Direct Download)](https://github.com/SYNC-TECH-Solutions/Vaultr/raw/main/app-debug.apk)** â€” Install instantly on any Android device!
+* ðŸŽ **[Download iOS & Web Releases](https://github.com/SYNC-TECH-Solutions/Vaultr/releases/latest)** â€” Check the latest updates and compile native builds.
 
 ---
 
-Centcible is a premium, AI-powered financial management app for Web, Android, and iOS. Built with React + Vite and powered by **Google Gemini AI** for intelligent receipt parsing and personalised savings advice.
+Vaultr is a premium, AI-powered financial management app for Web, Android, and iOS. Built with React + Vite and powered by **Google Gemini AI** for intelligent receipt parsing and personalised savings advice.
 
 ---
 
-## ✨ Features
+## âœ¨ Features
 
 | Feature | Description |
 |---|---|
-| 📊 **Dashboard** | Real-time spending overview with interactive charts |
-| 🧾 **AI Receipt Scanning** | Upload receipts — Gemini AI itemises and categorises instantly |
-| 🎯 **Budget Goals** | Set monthly category limits with live progress tracking |
-| 💳 **Loans Tracker** | Track debts, pay-downs, and loan completion |
-| 👥 **Partner Hub** | Shared grocery lists, real-time partner chat, and joint ledger |
-| 📄 **Monthly Statements** | Premium PDF statements with AI-generated savings tips |
-| 💱 **Multi-Currency** | USD, EUR, GBP, JPY, INR, CAD, AUD support |
-| 📱 **Android & iOS** | Native mobile apps via Capacitor |
+| ðŸ“Š **Dashboard** | Real-time spending overview with interactive charts |
+| ðŸ§¾ **AI Receipt Scanning** | Upload receipts â€” Gemini AI itemises and categorises instantly |
+| ðŸŽ¯ **Budget Goals** | Set monthly category limits with live progress tracking |
+| ðŸ’³ **Loans Tracker** | Track debts, pay-downs, and loan completion |
+| ðŸ‘¥ **Partner Hub** | Shared grocery lists, real-time partner chat, and joint ledger |
+| ðŸ“„ **Monthly Statements** | Premium PDF statements with AI-generated savings tips |
+| ðŸ’± **Multi-Currency** | USD, EUR, GBP, JPY, INR, CAD, AUD support |
+| ðŸ“± **Android & iOS** | Native mobile apps via Capacitor |
 
 ---
 
-## 🚀 Quick Start (Web)
+## ðŸš€ Quick Start (Web)
 
 ```bash
 npm install
@@ -39,7 +39,7 @@ Open [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 📱 Mobile (Android)
+## ðŸ“± Mobile (Android)
 
 1. Install [Android Studio](https://developer.android.com/studio)
 2. Build the web app: `npm run build`
@@ -47,7 +47,7 @@ Open [http://localhost:5173](http://localhost:5173)
 4. Open Android Studio: `npx cap open android`
 5. Run on emulator or physical device
 
-## 📱 Mobile (iOS)
+## ðŸ“± Mobile (iOS)
 
 > Requires macOS with Xcode installed.
 
@@ -58,17 +58,17 @@ Open [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🤖 Gemini AI Setup
+## ðŸ¤– Gemini AI Setup
 
 To enable AI-powered receipt scanning:
 
 1. Get a free API key from [Google AI Studio](https://aistudio.google.com/)
-2. Open the app → **Scan Receipt** → click **AI Configuration**
+2. Open the app â†’ **Scan Receipt** â†’ click **AI Configuration**
 3. Paste your key and click **Save Key**
 
 ---
 
-## 📦 Tech Stack
+## ðŸ“¦ Tech Stack
 
 - **Frontend**: React 19, Vite 8, React Router 7
 - **Charts**: Recharts
@@ -80,7 +80,7 @@ To enable AI-powered receipt scanning:
 
 ---
 
-## 🔄 CI/CD
+## ðŸ”„ CI/CD
 
 GitHub Actions automatically:
 - Builds the web app on every push to `main`
@@ -91,11 +91,12 @@ See [`.github/workflows/build.yml`](.github/workflows/build.yml)
 
 ---
 
-## 👤 Author
+## ðŸ‘¤ Author
 
-**Sheraz Hussain** — [@SherazHussain546](https://github.com/SherazHussain546)
+**Sheraz Hussain** â€” [@SherazHussain546](https://github.com/SherazHussain546)
 SYNC Tech Solutions
 
 ---
 
-© 2026 Centcible Inc. All rights reserved.
+Â© 2026 Vaultr Inc. All rights reserved.
+

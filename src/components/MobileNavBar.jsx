@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, List, Receipt, Users, FileText } from 'lucide-react';
+import { LayoutDashboard, List, Receipt, Users, FileText, Target, CreditCard } from 'lucide-react';
 
-// Minimal bottom nav for mobile - shows the 5 most important screens
+// 6 items for mobile bottom nav
 const mobileNavItems = [
-  { path: '/', label: 'Home', icon: <LayoutDashboard size={22} /> },
+  { path: '/dashboard',    label: 'Home',     icon: <LayoutDashboard size={22} /> },
   { path: '/transactions', label: 'Expenses', icon: <List size={22} /> },
-  { path: '/scan', label: 'Scan', icon: <Receipt size={22} /> },
-  { path: '/partner', label: 'Partner', icon: <Users size={22} /> },
-  { path: '/statements', label: 'Reports', icon: <FileText size={22} /> },
+  { path: '/scan',         label: 'Scan',     icon: <Receipt size={22} /> },
+  { path: '/partner',      label: 'Partner',  icon: <Users size={22} /> },
+  { path: '/budget',       label: 'Budget',   icon: <Target size={22} /> },
+  { path: '/statements',   label: 'Reports',  icon: <FileText size={22} /> },
 ];
 
 export default function MobileNavBar() {

@@ -1,6 +1,6 @@
 {
-  "appId": "com.centcible.app",
-  "appName": "Centcible",
+  "appId": "com.vaultr.app",
+  "appName": "Vaultr",
   "webDir": "dist",
   "bundledWebRuntime": false
 }
